@@ -1,3 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+@import "reset.css";
+
+body {
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+.user-welcome {
+    text-align: center;
+    padding: 20px;
+    font-size: 60px;
+    font-family: 'Jua', sans-serif;
+}
+
+
+
+
+.momentum-screen {
+    display: flex;
+}
+.momentum-screen > div {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+.momentum-screen > div:nth-child(2),
+.momentum-screen > div:nth-child(3) {
+    align-items: center;
+    padding: 20px;
+}
+
+
+
+
+
+.left-side {
+    padding-left: 100px;
+}
+#todo-form {
+    margin-bottom: 10px;
+}
+.todo-box li {
+    margin-bottom: 10px;
+}
+.todo-box li:nth-of-type(n+12) {
+    display: none;
+}
+
+
+
+.middle-side {
+    margin: 0 20px;
+    justify-content: space-between;
+}
+.middle-side div {
+    position: fixed;
+}
+.middle-side .date {
+    top: 200px;
+}
+.middle-side .clock {
+    top: 400px;
+}
+.middle-side .weather {
+    bottom: 200px;
+}
+
+
+
+
+
+.quotes-bar {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 50px;
+    text-align: center;
+}
+#quotes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#quotes span:first-child {
+    margin-bottom: 5px;
+}
+#quotes span:nth-child(2) {
+    margin-bottom: 10px;
+}
+
+
+
+
 .hidden {
     display: none;
 }
