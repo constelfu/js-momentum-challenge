@@ -29,8 +29,9 @@
     height: 35px;
     width: 64px;
     border-radius: 10px;
-    background-color: rgba(255, 224, 98, 1);
-    color: rgba(108, 24, 24, 1);
+    background-color: var(--pikachu);
+    color: var(--pikachu-dark);
+    border: 1px solid rgba(0, 0, 0, 0.5);
     position: absolute;
 
 }
@@ -42,14 +43,14 @@
     margin-bottom: 10px;
     font-size: 30px;
     background-color: var(--bg-color);
-    border: 2px solid rgba(0, 0, 0, 1);
+    border: none;
     border-radius: 10px;
     padding: 3px 10px;
     position: relative;
 }
 .to-do__list button {
-    background-color: rgba(255, 224, 98, 1);
-    color: rgba(108, 24, 24, 1);
+    background-color: var(--pikachu);
+    color: var(--pikachu-dark);
     position: absolute;
     right: -1px;
     top: -1px;

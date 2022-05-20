@@ -1,3 +1,5 @@
 :root {
     --bg-color: rgba(30, 30, 30, 0.3);
+    --pikachu: rgba(255, 224, 98, 1);
+    --pikachu-dark: rgba(108, 24, 24, 1);
 }

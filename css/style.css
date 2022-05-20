@@ -42,12 +42,13 @@ img {
     display: flex;
     flex-direction: column;
 }
-.momentum-screen > div:nth-child(2),
-.momentum-screen > div:nth-child(3) {
+.momentum-screen > div:nth-child(2) {
     align-items: center;
     padding: 20px;
 }
-
+.momentum-screen > div:nth-child(3) {
+    padding: 20px;
+}
 
 
 
