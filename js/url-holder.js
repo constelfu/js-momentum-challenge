@@ -26,8 +26,10 @@ function paintUrl(newUrl) {
     anchor.setAttribute("href",`${newUrl.text}`);
     // setAttribute로 url 링크 생성 가능 !
     const button = document.createElement("button");
-    button.innerText = "Delete";
+    button.innerHTML = `<i class="fas fa-eraser fa-lg"></i>`;
     button.addEventListener("click", deleteUrl);
+    const buttonIcon = button.querySelector("i");
+    buttonIcon.addEventListener("click",deleteUrlIcon);
     
     li.appendChild(anchor);
     li.appendChild(button);
@@ -40,6 +42,12 @@ function deleteUrl(event) {
     const li = event.target.parentElement;
     li.remove();
     urlArray = urlArray.filter(urlArray => urlArray.id !== parseInt(li.id));
+    saveUrlArray();        // 원래 있던 UrlArray 전역변수 배열
+}
+function deleteUrlIcon(event) {
+    const icon = event.target.parentElement.parentElement;
+    icon.remove();
+    urlArray = urlArray.filter(toDo => toDo.id !== parseInt(icon.id));
     saveUrlArray();        // 원래 있던 UrlArray 전역변수 배열
 }
 

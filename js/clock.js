@@ -10,10 +10,9 @@ function getClock() {
 
     const hours   = String(date.getHours()).padStart(2, "0");
     const minutes = String(date.getMinutes()).padStart(2, "0");
-    const seconds = String(date.getSeconds()).padStart(2, "0");
     
     yearMonthDay.innerText = `${years}년 ${months}월 ${days}일`;
-    clock.innerText = `${hours}:${minutes}:${seconds}`;
+    clock.innerText = `${hours}:${minutes}`;
 }
 
 getClock();

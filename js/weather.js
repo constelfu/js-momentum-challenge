@@ -12,7 +12,7 @@ function onGeoOk(position) {
           const city = document.querySelector("#weather span:nth-child(1)");
           const weather = document.querySelector("#weather span:nth-child(2)");
           city.innerText = data.name;
-          weather.innerText = `${data.weather[0].main} / ${data.main.temp}`;
+          weather.innerText = `${data.weather[0].main} / ${data.main.temp}도`;
     });
 }
 function onGeoError() {

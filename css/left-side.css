@@ -1,0 +1,63 @@
+.left-side {
+    padding-left: 20px;
+}
+.left-side > div {
+    padding: 20px;
+}
+.todo-form {
+    position: relative;
+}
+.todo-form__input {
+    margin-bottom: 20px;
+    height: 25px;
+    font-size: 25px;
+    width: 84%;
+    border: none;
+    border-radius: 20px;
+    border-bottom: 2px solid rgba(255, 224, 98, 1);
+    background-color: var(--bg-color);
+    padding-left: 10px;
+    padding-bottom: 5px;
+    color: rgba(245, 245, 245, 1);
+    font-family: 'Dongle', sans-serif;
+}
+.todo-form__input::placeholder {
+    color: rgba(245, 245, 245, 1);
+    font-family: 'Dongle', sans-serif;
+}
+.todo-form__btn {
+    height: 35px;
+    width: 64px;
+    border-radius: 10px;
+    background-color: rgba(255, 224, 98, 1);
+    color: rgba(108, 24, 24, 1);
+    position: absolute;
+
+}
+
+#todo-form {
+    margin-bottom: 10px;
+}
+.to-do__list li {
+    margin-bottom: 10px;
+    font-size: 30px;
+    background-color: var(--bg-color);
+    border: 2px solid rgba(0, 0, 0, 1);
+    border-radius: 10px;
+    padding: 3px 10px;
+    position: relative;
+}
+.to-do__list button {
+    background-color: rgba(255, 224, 98, 1);
+    color: rgba(108, 24, 24, 1);
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    height: 39px;
+    width: 64px;
+    border-radius: 10px;
+    
+}
+.to-do__list li:nth-of-type(n+10) {
+    display: none;
+}

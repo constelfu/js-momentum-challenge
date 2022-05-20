@@ -25,9 +25,10 @@ function paintToDo(newToDo) {
     const span = document.createElement("span");
     span.innerText = newToDo.text;
     const button = document.createElement("button");
-    button.innerText = "Delete";
+    button.innerHTML = `<i class="fas fa-eraser fa-lg"></i>`;
     button.addEventListener("click", deleteToDo);
-    
+    const buttonIcon = button.querySelector("i");
+    buttonIcon.addEventListener("click",deleteToDoIcon);
 
     li.appendChild(span);
     li.appendChild(button);
@@ -41,6 +42,13 @@ function deleteToDo(event) {
     toDos = toDos.filter(toDo => toDo.id !== parseInt(li.id));
     saveToDos();        // 원래 있던 toDos 전역변수 배열
     
+}
+
+function deleteToDoIcon(event) {
+    const icon = event.target.parentElement.parentElement;
+    icon.remove();
+    toDos = toDos.filter(toDo => toDo.id !== parseInt(icon.id));
+    saveToDos();        // 원래 있던 toDos 전역변수 배열
 }
 
 function saveToDos() {

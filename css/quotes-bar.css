@@ -1,0 +1,24 @@
+.quotes-bar {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 50px;
+    text-align: center;
+    box-sizing: border-box;
+}
+#quotes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#quotes span:first-child {
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+#quotes span:nth-child(2) {
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+#quotes span:last-child {
+    font-size: 40px;
+}

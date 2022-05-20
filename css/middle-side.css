@@ -1,0 +1,50 @@
+.middle-side {
+    margin: 0 20px;
+    justify-content: space-between;
+}
+.middle-side div {
+    position: fixed;
+}
+.middle-side .date {
+    top: 300px;
+    font-size: 60px;
+}
+.middle-side .clock {
+    top: 400px;
+    font-size: 200px;
+    font-weight: 700;
+}
+.middle-side .weather {
+    top: 580px;
+    font-size: 40px;
+}
+.login-box__input {
+    border: none;
+    color: white;
+    background-color: inherit;
+    border-bottom: 2px solid rgba(255, 224, 98, 1);
+    font-size: 25px;
+    width: 250px;
+    height: 30px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+.login-box__input::placeholder {
+    color: rgba(245, 245, 245, 1);
+    font-family: 'Dongle', sans-serif;
+}
+.login-box__form button {
+    color: rgba(108, 24, 24, 1);
+    background-color: rgba(255, 224, 98, 1);
+}
+.logout-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 50px;
+}
+.logout-form button {
+    color: rgba(108, 24, 24, 1);
+    background-color: rgba(255, 224, 98, 1);
+}

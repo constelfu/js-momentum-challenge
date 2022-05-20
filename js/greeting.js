@@ -21,6 +21,9 @@ function paintGreetings(username) {
 }
 
 function logoutSubmit() {
+    greeting.innerText = "Hello!";
+    loginForm.classList.remove(HIDDEN_CLASSNAME);
+    logoutForm.classList.add(HIDDEN_CLASSNAME);
     localStorage.removeItem(USERNAME_KEY);
     //window.location.reload();
 }

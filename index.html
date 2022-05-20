@@ -8,47 +8,55 @@
     <title>momentum</title>
   </head>
   <body>
-    <header class="user-welcome">
-      <span class="hidden" id="greeting"></span>
+    <header class="user-welcome header__bgcolor">
+      <span id="greeting">Hello!</span>
     </header>
     <main class="momentum-screen">
       <div class="left-side">
-        <div class="login-box">
-          <form class="hidden" id="login-form">
-            <input
-              required
-              maxlength="15"
-              type="text"
-              placeholder="what is your name?"
-            />
-            <button>LOGIN</button>
-          </form>
-
-          <form class="hidden" id="logout-form">
-            <button>LOG OUT</button>
-          </form>
-        </div>
-
         <div class="todo-box">
           <form id="todo-form">
             <input
+              class="todo-form__input"
               type="text"
-              placeholder="Write a To Do and Press Enter"
+              placeholder="오늘 할 일..."
               required
+              maxlength="30"
             />
+            <button class="todo-form__btn">
+              <i class="fas fa-check fa-lg"></i>
+            </button>
           </form>
-          <ul id="todo-list"></ul>
+          <ul class="to-do__list" id="todo-list"></ul>
         </div>
       </div>
 
-      <div class="middle-side">
-        <div class="date"><span class="date__text">1980년</span></div>
+      <div class="middle-side middle-div__bgcolor middle-div__bgcolor-border">
+        <div class="login-box">
+          <form class="hidden login-box__form" id="login-form">
+            <input
+              class="login-box__input"
+              required
+              maxlength="15"
+              type="text"
+              placeholder="이름 입력..."
+            />
+            <button><i class="fas fa-sign-in-alt fa-2x"></i></button>
+          </form>
+
+          <form class="hidden logout-form" id="logout-form">
+            <span>LOG OUT</span>
+            <button><i class="fas fa-sign-out-alt fa-2x"></i></button>
+          </form>
+        </div>
+        <div class="date">
+          <span class="date__text">1980년</span>
+        </div>
         <div class="clock">
           <span id="clock">00 : 00</span>
         </div>
 
         <div class="weather" id="weather">
-          <span></span>
+          <span>위치 정보 필요</span>
           <span></span>
         </div>
       </div>
@@ -64,13 +72,15 @@
               type="text"
               placeholder="URL을 입력해주세요..."
             />
-            <button class="url-holder__button">Submit</button>
+            <button class="url-holder__button">
+              <i class="fas fa-check fa-lg"></i>
+            </button>
           </form>
           <ul class="url-holder__list"></ul>
         </div>
       </div>
     </main>
-    <footer class="quotes-bar">
+    <footer class="quotes-bar quotes-bar__bgcolor">
       <div id="quotes">
         <span></span>
         <span></span>
@@ -85,5 +95,9 @@
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
     <script src="js/url-holder.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
