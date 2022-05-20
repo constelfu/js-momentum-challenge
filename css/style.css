@@ -31,11 +31,13 @@ img {
 .user-welcome {
     text-align: center;
     padding: 20px;
+    margin-bottom: 20px;
     font-size: 60px;
     font-family: 'Jua', sans-serif;
 }
 .momentum-screen {
     display: flex;
+    margin-bottom: 20px;
 }
 .momentum-screen > div {
     width: 33%;
