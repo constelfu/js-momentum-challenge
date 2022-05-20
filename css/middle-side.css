@@ -3,20 +3,14 @@
     justify-content: space-between;
     margin-bottom: 20px;
 }
-.middle-side div {
-    /*position: fixed;*/
-}
 .middle-side .date {
-    /*top: 300px;*/
     font-size: 60px;
 }
 .middle-side .clock {
-    /*top: 400px;*/
     font-size: 200px;
     font-weight: 700;
 }
 .middle-side .weather__text {
-    /*top: 580px;*/
     font-size: 40px;
 }
 .login-box__input {
