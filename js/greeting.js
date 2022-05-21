@@ -21,11 +21,11 @@ function paintGreetings(username) {
 }
 
 function logoutSubmit() {
+    event.preventDefault();
     greeting.innerText = "Hello!";
     loginForm.classList.remove(HIDDEN_CLASSNAME);
     logoutForm.classList.add(HIDDEN_CLASSNAME);
     localStorage.removeItem(USERNAME_KEY);
-    //window.location.reload();
 }
 
 logoutForm.addEventListener("submit", logoutSubmit);
